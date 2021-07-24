@@ -1,0 +1,39 @@
+<html>
+    <title>Class 78 project-Famiily Album</title>
+    <link rel="stylesheet" href="style.css">
+    <body>
+        <br>
+        <br>
+        <br>
+        <img  id="img1" src="https://ak.picdn.net/shutterstock/videos/28744447/thumb/12.jpg">
+         <h2 id="h2"></h2> 
+        <br>
+        <br>
+        <br>
+        <br>
+         <button onclick="Next_photo()" id="btn1" >Next photo = D </button>
+         <script>
+             var photos = ["Jitesh.jpg",
+            "Omika.jpg",
+            "nishita.jpg",
+            "Devarsh.jpg",
+            "family photo1.jpg",
+            "family photo 2.jpg"];
+                 var names =["Jitesh","Omika","Nishita","Devarsh","Family Picture","Family Picture"];
+                 var i=0 ;
+             function Next_photo() {     
+                var updated_photos = photos[i];
+                 var updated_names = names[i];
+                 
+                 document.getElementById("img1").src=updated_photos ;
+                 document.getElementById("h2").innerHTML=updated_names ;
+                i++;
+                var family_members = 6
+                if( i > 5){
+                    i = 0 ;
+                                }
+                                   
+                         }
+         </script>
+    </body>
+</html>
